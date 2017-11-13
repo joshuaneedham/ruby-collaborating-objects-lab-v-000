@@ -13,4 +13,7 @@ class Song
     end
   end
 
+  def new_by_filename
+  end
+
 end
