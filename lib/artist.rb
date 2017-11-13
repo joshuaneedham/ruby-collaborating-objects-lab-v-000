@@ -7,13 +7,13 @@ class Artist
     @name = name
     @songs = []
   end
+  
+  def save(name)
+    @@all << name
+  end
 
   def songs
     @songs
-  end
-
-  def save(name)
-    @@all << name
   end
 
   def self.add_song(name)
