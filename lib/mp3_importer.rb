@@ -1,5 +1,5 @@
 class MP3Importer
-  attr_accessor :path
+  attr_reader :path
 
   def initialize(path)
     @path = path
@@ -12,4 +12,5 @@ class MP3Importer
   def import
     files.each{ |f| Song.new_by_filename(f) }
   end
+  
 end
