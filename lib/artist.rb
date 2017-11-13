@@ -18,8 +18,8 @@ class Artist
     song.artist = self
   end
 
-  def self.save(name)
-    @@all << name
+  def self.save
+    @@all
   end
 
 end
