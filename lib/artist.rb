@@ -9,15 +9,15 @@ class Artist
     @songs = []
   end
 
-  def save(song)
+  def save(name)
+    @@all << name
+  end
+
+  def songs
     @songs << song
     song.artist = self
   end
 
-  def songs
-    @songs << self
-  end
-  
   def add_song_by_name(name)
   song = Song.new(name)
   self.songs << song
